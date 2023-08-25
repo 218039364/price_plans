@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Price Plans</title>
-    <script src="./server.js"></script>
+    <script src="./express.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body class="body" x-data="totalphonebillWidget">
-    <h1>Totalphonebill Price Plans</h1>
+
+  
+  <body style="background-color: burlywood;" x-data="totalphonebillWidget">
+    <h1 style="color: aliceblue;">Totalphonebill Price Plans</h1>
 
     <button
       x-on:click="showTable = !showTable"
@@ -18,7 +20,7 @@
 
     <br />
 
-    <section>
+    <section style="color: aliceblue;">
       <table
         x-show="showTable"
         x-transition:enter="fade-enter-active"
@@ -50,7 +52,7 @@
     ></button
     ><br />
 
-    <section
+    <section style="color: aliceblue;"
       
       x-show="showFirstSection"
       x-transition:enter="slide-enter-active"
@@ -126,7 +128,7 @@
       </div>
     </section>
 
-    <section
+    <section style="color: aliceblue;"
       x-show="showFirstSection"
       x-transition:enter="slide-enter-active"
       x-transition:enter-start="slide-enter-from"
